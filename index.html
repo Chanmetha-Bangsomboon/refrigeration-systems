@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Knowledge for refrigeration systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar1">
+            <li class="menu-button1" onclick=closSidebar1()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#FBE6A3">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="index.html">ความรู้พื้นฐานระบบทำความเย็น</a></li>
+            <li><a href="checkcom.html">การตรวจสอบCompressor</a></li>
+            <li><a href="fixcom.html">การซ่อมและเปลี่ยนอุปกรณ์</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Guide Book</a></li>
+            <li class="HideOnMobile"><a href="index.html">ความรู้พื้นฐานระบบทำความเย็น </a></li>
+            <li class="HideOnMobile"><a href="checkcom.html">การตรวจสอบCompressor</a></li>
+            <li class="HideOnMobile"><a href="fixcom.html">การซ่อมและเปลี่ยนอุปกรณ์</a></li>
+            <li class="menu-button1" onclick=showSidebar1()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#FBE6A3">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <div class="leftsidebar">
+        <ul>
+            <li><a href="#Compressor">1. Compressor</a></li>
+            <li><a href="#Condenser">2. Condenser</a></li>
+            <li><a href="#ExpansionValve">3. Expansion Valve</a></li>
+            <li><a href="#Evaporator">4. Evaporator</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div>
+            <h1>ความรู้พื้นฐานของระบบความเย็น</h1>
+            <p>
+                ระบบทำความเย็น (Refrigeration System) มีหน้าที่ในการลดและรักษาอุณหภูมิในพื้นที่ที่กำหนด
+                โดยอาศัยหลักการของการระเหยและการควบแน่นของสารทำความเย็น (Refrigerant)
+                เพื่อดึงความร้อนออกจากพื้นที่และระบายทิ้งออกภายนอก
+            </p>
+        </div>
+        <div><br>   
+            <h2 id="section1" class="anchor">วงจรการทำงานของระบบทำความเย็น</h2>
+            <p>
+                หลักการทำงานของระบบนี้ประกอบไปด้วยการเปลี่ยนสถานะและการถ่ายเทความร้อนของสารทำความเย็น (Refrigerant) ที่ไหลเวียนผ่านส่วนประกอบหลักทั้งหมดสี่ส่วน ได้แก่ คอมเพรสเซอร์ (Compressor), คอนเดนเซอร์ (Condenser), วาล์วลดความดัน (Expansion Valve), และอีแวปโพเรเตอร์ (Evaporator)
+            </p>
+        </div>
+        <div><br>
+            <h3 id="Compressor" class="anchor">1. คอมเพรสเซอร์ (Compressor)</h3>
+            <p>ซึ่งเป็นส่วนที่มีหน้าที่ดูดและอัดสารทำความเย็นจากสถานะแก๊สที่มีแรงดันต่ำและอุณหภูมิต่ำให้มีแรงดันสูงขึ้น
+                กระบวนการนี้ทำให้อุณหภูมิของสารทำความเย็นสูงขึ้นด้วย เมื่อสารทำความเย็นถูกอัดจนมีแรงดันและอุณหภูมิสูง
+                จะถูกส่งต่อไปยัง คอนเดนเซอร์ (Condenser)
+            </p>
+            <br><img src="img/com.jpg">
+        </div>
+        <div><br>
+            <h3 id="Condenser" class="anchor">2. คอนเดนเซอร์ (Condenser) </h3>
+            <p>
+                ซึ่งเป็นส่วนที่ทำหน้าที่ระบายความร้อนออกจากสารทำความเย็น เมื่อสารทำความเย็นเย็นตัวลง
+                มันจะเปลี่ยนสถานะจากแก๊สเป็นของเหลว พร้อมสำหรับขั้นตอนต่อไป
+                สารทำความเย็นที่อยู่ในสถานะของเหลวนี้จะไหลต่อไปยัง วาล์วลดความดัน (Expansion Valve)
+            </p>
+            <br><img src="img/S__9945093_0.jpg">
+        </div>
+        <div><br>
+            <h3 id="ExpansionValve" class="anchor">3. วาล์วลดความดัน (Expansion Valve)</h3>
+            <p>
+                ซึ่งทำหน้าที่ลดแรงดันและอุณหภูมิของสารทำความเย็นอย่างรวดเร็ว
+                การลดแรงดันนี้จะทำให้ของเหลวมีอุณหภูมิต่ำมาก พร้อมสำหรับการดูดซับความร้อนในขั้นตอนต่อไป
+                สารทำความเย็นที่มีอุณหภูมิต่ำจะไหลเข้าสู่ อีแวปโพเรเตอร์ (Evaporator)
+            </p>
+            <br><img src="img/S__9945094_0.jpg">
+        </div>
+        <div><br>
+            <h3 id="Evaporator" class="anchor">4. อีแวปโพเรเตอร์ (Evaporator)</h3>
+            <p>ซึ่งเป็นส่วนที่อยู่ภายในพื้นที่ที่ต้องการทำความเย็น เช่น ตู้แช่หรือตู้เย็น
+                ภายในอีแวปโพเรเตอร์ สารทำความเย็นจะระเหยและดูดซับความร้อนจากอากาศภายใน ทำให้อุณหภูมิของพื้นที่นั้นลดลง
+                กระบวนการนี้จะทำให้สารทำความเย็นเปลี่ยนสถานะกลับมาเป็นแก๊สอีกครั้ง
+                และไหลกลับไปยังคอมเพรสเซอร์เพื่อเริ่มต้นวงจรการทำงานใหม่
+            </p>
+            <br><img src="img/S__9945095_0.jpg">
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
